@@ -3,149 +3,162 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Politique de Confidentialité - ARN App</title>
+    <title>ARN Mobile - Legal Information</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
             line-height: 1.6;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
             color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            max-width: 600px;
+            width: 100%;
+            padding: 60px 40px;
+            text-align: center;
+        }
+        .logo {
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(135deg, #10B981 0%, #059669 100%);
+            border-radius: 25px;
+            margin: 0 auto 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+            color: white;
+            font-weight: bold;
+            box-shadow: 0 10px 30px rgba(16, 185, 129, 0.3);
         }
         h1 {
+            color: #1f2937;
+            font-size: 36px;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        .subtitle {
+            color: #6b7280;
+            font-size: 18px;
+            margin-bottom: 40px;
+        }
+        .developer {
             color: #10B981;
-            border-bottom: 3px solid #10B981;
-            padding-bottom: 10px;
+            font-weight: 600;
+            font-size: 20px;
+            margin-bottom: 40px;
         }
-        h2 {
-            color: #059669;
-            margin-top: 30px;
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-bottom: 40px;
         }
-        .update-date {
-            color: #666;
-            font-style: italic;
+        .btn {
+            display: inline-block;
+            padding: 18px 40px;
+            text-decoration: none;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        .btn-primary {
+            background: linear-gradient(135deg, #10B981 0%, #059669 100%);
+            color: white;
+        }
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(16, 185, 129, 0.4);
+        }
+        .btn-secondary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        .btn-secondary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
         }
         .contact {
-            background: #f0fdf4;
-            padding: 15px;
-            border-left: 4px solid #10B981;
+            background: #f9fafb;
+            padding: 25px;
+            border-radius: 12px;
             margin-top: 30px;
+        }
+        .contact h3 {
+            color: #1f2937;
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+        .contact p {
+            color: #6b7280;
+            font-size: 14px;
+            line-height: 1.8;
+        }
+        .contact a {
+            color: #10B981;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .contact a:hover {
+            text-decoration: underline;
+        }
+        .footer {
+            margin-top: 40px;
+            color: #9ca3af;
+            font-size: 14px;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 40px 25px;
+            }
+            h1 {
+                font-size: 28px;
+            }
+            .subtitle {
+                font-size: 16px;
+            }
         }
     </style>
 </head>
 <body>
-    <h1>Politique de Confidentialité</h1>
-    <p class="update-date">Dernière mise à jour : 6 novembre 2024</p>
-
-    <h2>1. Introduction</h2>
-    <p>
-        Bienvenue dans l'application ARN (Association des Ressortissants de Niagara). 
-        Nous respectons votre vie privée et nous nous engageons à protéger vos données personnelles. 
-        Cette politique de confidentialité explique comment nous collectons, utilisons et protégeons vos informations.
-    </p>
-
-    <h2>2. Informations que nous collectons</h2>
-    <p>Nous collectons les informations suivantes :</p>
-    <ul>
-        <li><strong>Informations de compte :</strong> Nom, prénom, adresse e-mail, numéro de téléphone</li>
-        <li><strong>Informations de localisation :</strong> District, village, adresse (pour les membres de l'association)</li>
-        <li><strong>Photos et images :</strong> Photos de profil, photos de couverture, images partagées dans les diffusions</li>
-        <li><strong>Informations d'authentification :</strong> Données de connexion Google Sign-In</li>
-        <li><strong>Données d'utilisation :</strong> Interactions avec l'application, préférences</li>
-    </ul>
-
-    <h2>3. Comment nous utilisons vos informations</h2>
-    <p>Vos données sont utilisées pour :</p>
-    <ul>
-        <li>Créer et gérer votre compte membre</li>
-        <li>Faciliter la communication entre les membres de l'association</li>
-        <li>Partager des informations, événements et réunions</li>
-        <li>Gérer les demandes financières et les contributions</li>
-        <li>Améliorer l'expérience utilisateur de l'application</li>
-        <li>Envoyer des notifications importantes concernant l'association</li>
-    </ul>
-
-    <h2>4. Partage des informations</h2>
-    <p>Vos informations sont partagées uniquement :</p>
-    <ul>
-        <li>Avec les autres membres approuvés de l'association ARN</li>
-        <li>Avec les administrateurs de l'association pour la gestion</li>
-        <li>Nous ne vendons jamais vos données à des tiers</li>
-        <li>Nous ne partageons pas vos données avec des annonceurs</li>
-    </ul>
-
-    <h2>5. Stockage et sécurité des données</h2>
-    <p>
-        Vos données sont stockées de manière sécurisée sur Firebase (Google Cloud Platform) avec :
-    </p>
-    <ul>
-        <li>Chiffrement des données en transit (HTTPS/TLS)</li>
-        <li>Chiffrement des données au repos</li>
-        <li>Règles de sécurité Firestore strictes</li>
-        <li>Authentification sécurisée via Firebase Auth</li>
-        <li>Accès limité aux administrateurs autorisés uniquement</li>
-    </ul>
-
-    <h2>6. Vos droits</h2>
-    <p>Vous avez le droit de :</p>
-    <ul>
-        <li><strong>Accéder</strong> à vos données personnelles</li>
-        <li><strong>Modifier</strong> vos informations de profil</li>
-        <li><strong>Supprimer</strong> votre compte et vos données</li>
-        <li><strong>Retirer votre consentement</strong> à tout moment</li>
-        <li><strong>Exporter</strong> vos données personnelles</li>
-    </ul>
-
-    <h2>7. Conservation des données</h2>
-    <p>
-        Nous conservons vos données aussi longtemps que votre compte est actif. 
-        Si vous supprimez votre compte, vos données personnelles seront supprimées dans un délai de 30 jours, 
-        sauf si la loi nous oblige à les conserver plus longtemps.
-    </p>
-
-    <h2>8. Services tiers</h2>
-    <p>Notre application utilise les services suivants :</p>
-    <ul>
-        <li><strong>Firebase (Google) :</strong> Authentification, base de données, stockage, notifications</li>
-        <li><strong>Google Sign-In :</strong> Authentification sécurisée</li>
-        <li><strong>Cloudflare :</strong> Hébergement d'images et de vidéos</li>
-    </ul>
-    <p>
-        Ces services ont leurs propres politiques de confidentialité que nous vous encourageons à consulter.
-    </p>
-
-    <h2>9. Cookies et technologies similaires</h2>
-    <p>
-        Nous utilisons des technologies de stockage local pour améliorer votre expérience, 
-        notamment pour mémoriser vos préférences et maintenir votre session connectée.
-    </p>
-
-    <h2>10. Modifications de cette politique</h2>
-    <p>
-        Nous pouvons mettre à jour cette politique de confidentialité de temps en temps. 
-        Nous vous informerons de tout changement important via l'application ou par e-mail.
-    </p>
-
-    <h2>11. Utilisateurs mineurs</h2>
-    <p>
-        Notre application est destinée aux membres de l'association ARN. 
-        Les utilisateurs de moins de 18 ans doivent obtenir le consentement de leurs parents ou tuteurs légaux.
-    </p>
-
-    <div class="contact">
-        <h2>12. Nous contacter</h2>
-        <p>Pour toute question concernant cette politique de confidentialité ou vos données personnelles :</p>
-        <p>
-            <strong>Email :</strong> contact@arn-app.com<br>
-            <strong>Association :</strong> Association des Ressortissants de Niagara (ARN)<br>
-            <strong>Localisation :</strong> Guinée
-        </p>
+    <div class="container">
+        <div class="logo">ARN</div>
+        <h1>ARN Mobile</h1>
+        <p class="subtitle">Association des Ressortissants de Niagara</p>
+        <p class="developer">Développé par EmkeyFlow</p>
+        
+        <div class="buttons">
+            <a href="privacy.html" class="btn btn-primary">📋 Politique de Confidentialité</a>
+            <a href="tos.html" class="btn btn-secondary">📜 Conditions d'Utilisation</a>
+        </div>
+        
+        <div class="contact">
+            <h3>📧 Nous Contacter</h3>
+            <p>
+                <strong>Email:</strong> <a href="mailto:emkeyindustries@gmail.com">emkeyindustries@gmail.com</a><br>
+                <strong>Développeur:</strong> EmkeyFlow<br>
+                <strong>Application:</strong> ARN Mobile
+            </p>
+        </div>
+        
+        <div class="footer">
+            © 2024 ARN Mobile by EmkeyFlow. Tous droits réservés.
+        </div>
     </div>
-
-    <hr style="margin-top: 40px; border: none; border-top: 1px solid #ddd;">
-    <p style="text-align: center; color: #666; font-size: 14px;">
-        © 2024 ARN App. Tous droits réservés.
-    </p>
 </body>
 </html>
